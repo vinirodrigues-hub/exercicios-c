@@ -1,60 +1,34 @@
-# Laços de Repetição em C
+# Exercícios de C
 
-Repositório com atividades acadêmicas sobre os três laços de repetição da linguagem C: `for`, `while` e `do-while`.
+Aqui ficam as atividades da faculdade que fiz para treinar e estudar a linguagem C. Começou só com laços de repetição, mas agora o repositório reúne tudo o que já vi na matéria: decisões, repetições, funções e outros assuntos.
 
-Os códigos foram feitos para treinar e estudar a linguagem C, e não são um projeto de produção. Os arquivos mostram os laços funcionando, com exemplos simples.
+## O que tem em cada pasta
 
-## Os três laços
+- decisao: exercícios com if, else, else if e switch
+- repeticao: o for fica em um arquivo e o while e o do-while ficam juntos em outro
+- funcoes: exercícios que separam o código em funções, com parâmetros e retorno
+- outros: o que não coube nas pastas acima
 
-Um laço de repetição executa um bloco de código várias vezes, enquanto uma condição for verdadeira.
-
-### for
-
-Usado quando se sabe quantas vezes repetir.
-
-```c
-for (int i = 1; i <= 5; i++) {
-    printf("%d\n", i);
-}
-```
-
-### while
-
-Testa a condição antes de executar o bloco, então pode nunca executar. Lembre de atualizar a variável dentro do laço para evitar loop infinito.
-
-```c
-int i = 1;
-while (i <= 5) {
-    printf("%d\n", i);
-    i++;
-}
-```
-
-### do-while
-
-Testa a condição depois de executar o bloco, então executa pelo menos uma vez. Note o `;` no final.
-
-```c
-int i = 1;
-do {
-    printf("%d\n", i);
-    i++;
-} while (i <= 5);
-```
+Cada arquivo .c é um exercício independente, com um main próprio. Dá pra abrir qualquer um e rodar sem depender dos outros.
 
 ## Como executar
 
-É necessário ter um compilador C instalado, como o GCC (`gcc --version` para conferir).
+Você precisa ter o gcc instalado. No Windows, eu uso o MSYS2.
 
-```bash
-git clone https://github.com/vinirodrigues-hub/estrutura-repeticao-c.git
-cd estrutura-repeticao-c
-gcc for.c -o for
-./for
-```
+Para compilar um exercício:
 
-No Windows, execute com `for.exe`. Repita para os outros arquivos, trocando o nome.
+    gcc nome_do_arquivo.c -o nome_do_arquivo
 
-## Autor
+Para rodar no Windows:
 
-Feito por Vinícius Silva Rodrigues, estudante de Engenharia de Software.
+    nome_do_arquivo.exe
+
+No Linux ou macOS:
+
+    ./nome_do_arquivo
+
+Se quiser ver os avisos do compilador, adicione a flag -Wall na hora de compilar.
+
+## Sobre o código
+
+Como são exercícios de estudo, os programas são simples e priorizam mostrar o conceito, não a performance. Se você está aprendendo C também, fique à vontade para clonar, mexer e quebrar o código para ver o que acontece.
